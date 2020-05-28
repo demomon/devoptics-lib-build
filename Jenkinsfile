@@ -33,5 +33,10 @@ spec:
         }
       }
     }
+    stage('Trigger App Build'){
+      steps {
+        build job: 'devoptics/devoptics-build/master', propagate: false, wait: false
+      }
+    }
   }
 }
