@@ -27,7 +27,7 @@ spec:
         container('maven') {
           script {
             withMaven() {
-              sh "mvn clean install"
+              sh 'mvn clean install'
             }
           }
         }
